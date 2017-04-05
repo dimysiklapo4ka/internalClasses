@@ -3,7 +3,12 @@ package internalClasses;
 /**
  * Created by d1mys1klapo4ka on 06.04.2017.
  */
-public class Executors {
+
+final class Executors {
+
+    private Executors(){
+        throw new UnsupportedOperationException("Запрет на создание класса.");
+    }
 
     static class Nested implements Executable{
 
